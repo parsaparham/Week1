@@ -17,6 +17,16 @@ var isEqual;
 isEqual=(a==b);
 
 
+var colors=["red","black","yellow","orange"];
+document.writeln(colors[2]);
+
+var names=new Array("mohammad","ali","hasan","hossein");
+document.writeln(names[2]);
+console.log(names);
+
+
+
+
 
 number=1;
 Name="Mohammad Parham Parsa";
