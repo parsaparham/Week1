@@ -71,6 +71,30 @@ var NewColors=colors.slice();
 document.writeln("</br>");
 document.writeln(NewColors);
 
+//جستجو در آرایه
+var result=colors.indexOf("black",0);
+document.writeln("</br>");
+document.writeln(result);
+
+//تمام مقادیر آزایه را بصورت استرینگ  در میاره
+var arrayString=colors.join();
+document.writeln("<br/><br/><span>مقادیر آرا یه را بصورت یک رشته</span></br>");
+document.writeln(arrayString);
+
+//تمام مقادیر آرا یه را بصورت رشته در میاره و میتوانیم نوع جداکننده را مشخص کنیم
+var arrayString1=colors.join("--");
+document.writeln("<br/><br/>مقادیر آرایه بصورت رشته با جدا کننده دلخواه<br/>");
+document.writeln(arrayString1);
+
+//شرط خلاصه
+//condition ? If Condition is true : If Condition is false;
+var q=1 , w=2;
+var isEqual;
+q==w ? isEqual=true : isEqual=false;
+document.writeln("<br/><br/><span>The Equal Match Is"+isEqual+"</span>");
+
+
+
 
 
 
