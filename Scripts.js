@@ -94,6 +94,32 @@ q==w ? isEqual=true : isEqual=false;
 document.writeln("<br/><br/><span>The Equal Match Is"+isEqual+"</span>");
 
 
+//Switch Case
+var today=new Date().getDay();
+var dayName;
+document.writeln("<br/></br>");
+document.writeln(today);
+
+switch(today)
+{
+    case 0:
+        dayName="یکشنبه";
+        break;
+    case 1:
+        dayName="دوشنبه";
+        break;
+    case 2:
+        dayName="سه شنبه";
+        break;
+    default:
+        dayName="مشخص نیست";
+}
+document.writeln("<br><span>امروز </span>"+dayName+" است");
+
+
+
+
+
 
 
 
