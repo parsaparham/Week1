@@ -116,6 +116,57 @@ switch(today)
 }
 document.writeln("<br><span>امروز </span>"+dayName+" است");
 
+//Functions
+
+//Void Functions
+function findBiggestFraction()
+{
+    document.writeln("<br/>Hello. I am a Function<br/><br/>");
+}
+findBiggestFraction();
+
+function findBiggestFraction1(a,b)
+{
+    a>b ? document.writeln(a+" is biiger than "+b) : document.writeln(b+" is bihher than "+a);
+}
+findBiggestFraction1(9,8);
+
+//Not Void Functions 1
+function jafariFindSmallerNumber(c,d)
+{
+    var result;
+    c>d ? result=["Smaller is "+d] : result=["Smaller is "+c];
+    return result;
+}
+document.writeln("<br/><br/>"+jafariFindSmallerNumber(99,78));
+
+var result2=jafariFindSmallerNumber(23,45);
+document.writeln("<br/>Smaller : "+result2[0]+"With a value"+result2[1]);
+
+//Anonymous Functions
+var theBiggest=function (a,b)
+{
+    var result3;
+    a>b ? result3=["a",a] : result3=["b",b];
+    return result3;
+}
+document.writeln("<br/>"+theBiggest(23,32));
+
+//Immidiately invoked Functions
+//تابعی که در جا اجرا میشود. فقط باید کل تابع در پرانتز قرار گیرد
+var theBiggest2=(function (a,b)
+{
+    var result4;
+    a>b ? result4=["a",a] : result4=["b",b];
+    return result4;
+}) (12,21)
+document.writeln(theBiggest2);
+
+
+
+
+
+
 
 
 
