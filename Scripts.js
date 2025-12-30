@@ -1,33 +1,36 @@
+//objects
 
-var Variable1="Variable1"; //Globally Variable
-
-function myFunction()
-{
-    var Variable2="Variable2"; //locally Variable
+var person={
+    firstName:"Mohammad",
+    lastName:"jafari"
 }
 
-document.writeln(Variable1);
+var person2=new Object();
 
-var result="Mohammad";
-console.log(result);
+person2.phoneNmber=09132263154;
+person2.age=44;
 
-//const  متغیر ثابت
-//همیشه ثابت است و اگرتغییر بدیم خطا میدهد
-const res2="Ali";
-//res2="hasan";
-document.writeln(res2);
 
-//let
-function scop()
-{
-    let var1=2;
-    if(a=2){
-        let var1=3;
-        console.log("In If Block"+var1);
+console.log(person2);
+
+//Using Functions in Objects
+
+var course={
+    title:"Javascript",
+    teacher:"Mohammad Jafari",
+    level:1,
+    isActive:true,
+    views:0,
+    updateView:function()
+    {
+        return ++course.views;
     }
-    console.log("In Main Block"+var1);
 }
-scop();
+
+console.log(course.views);
+course.updateView();
+console.log(course.views);
+
 
 
 
