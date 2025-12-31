@@ -1,18 +1,28 @@
-//Loops : for of - vs - for in
+//Loops : While 
 
-var cars=["Bens","BME","Toyota","KIA","Alfa Romeo"]; //Array
-const car={name:"BMW X3",ProductYear:2006,color:"Blue",isABS:true}; //an Object
+//واکشی عناصر آرایه
 
-for(value of cars) //در آرایه داریم امتحان می کنیم
+const cars=["Benz","BMW","Toyota","Ford","NIssan"];  //an Array
+var i=0;
+
+while(cars [i])
 {
-    console.log(value); //Output => Bens BMW Toyota KIA AlfaRomeo
+    
+    console.log(cars[i]);
+    i++;
+
 }
 
-// تفاوتش با بالا را ببینید
-for(value in cars) //در آرایه داریم امتحان میکنیم
+
+
+// do while
+i=0;
+
+do
 {
-    console.log(value); //Output =>  0 1 2 3 4 
-}
+    console.log(cars[i]);
+    i++;
+}while(i<10);
 
 
 
