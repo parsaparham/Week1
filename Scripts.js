@@ -1,24 +1,38 @@
-//objects Constructor
+//Loops : For
 
-function Course(title,teacher,level,isActive,views,updateView)
+var cars=["Bens","BME","Toyota","KIA","Alfa Romeo"]; //Array
+
+console.log(cars);
+
+console.log("The Car Brand is: "+cars);
+
+console.log("The Car Brand is: "+cars[2]);
+
+for(let i=0;i<5;i++)
 {
-    this.title=title,
-    this.teacher=teacher,
-    this.level=level,
-    this.isActive=isActive,
-    this.views=views,
-    this.updateView=function (){
-        return ++this.views;
-    }
+    console.log("The Car Brand is :"+cars[i]);
 }
 
-var Course1=new Course("Javascript","Mohammad Jafari",1,true,0);
-var Course2=new Course("Python","Parsa Jafari",2,true,110);
-var Course3=new Course("PytHtml Csshon","Parham Jafari",3,true,220);
 
-console.log(Course1);
-console.log(Course2);
-console.log(Course3);
+//For in-- in Arrays
+for (key in cars)
+{
+    console.log(key);//output=> name ProductYear color isABS
+    console.log(cars[key]); //Output=> BMWX3 2006 Blue true
+}
+
+
+//For in-- in Objects
+const car={name:"BMW X3",ProductYear:2006,color:"Blue",isABS:true}; //an Object
+for (key in car)
+{
+    //console.log(key);//output=> name ProductYear color isABS
+   // console.log(car[key]); //Output=> BMWX3 2006 Blue true
+}
+
+
+
+
 
 
 
