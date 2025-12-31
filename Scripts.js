@@ -1,28 +1,36 @@
-//Loops : While 
+
+
+
+
+
+
+//Loops : break vs continue 
 
 //واکشی عناصر آرایه
 
-const cars=["Benz","BMW","Toyota","Ford","NIssan"];  //an Array
-var i=0;
+//break => اگر به یه مقداری رسید کلا قطع میشود
 
-while(cars [i])
+const cars=["Benz","BMW","Toyota","Ford","NIssan","KIA","Land Cruize","Pegeout","Hyundai"];  //an Array
+
+for(let i=0 ; i<10 ; i++)
 {
-    
+    if(i==5){
+        break;
+    }
     console.log(cars[i]);
-    i++;
+}
 
+//Continue => اگر به یه مقداری رسید فقط آن مقدار را بیخیال میشود و بعد دوباره ادامه میدهد 
+
+for(let i=0 ; i<10 ; i++)
+{
+    if(i==6){
+        continue;
+    }
+    console.log(cars[i]);
 }
 
 
-
-// do while
-i=0;
-
-do
-{
-    console.log(cars[i]);
-    i++;
-}while(i<10);
 
 
 
