@@ -7,8 +7,7 @@ element.innerHTML="Hello DOM2";
 
 element.innerHTML="Date "+Date();
 
-
-
+//
 
 
 
