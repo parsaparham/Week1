@@ -20,6 +20,9 @@ if(ctaElement.hasAttribute("target"))
     ctaElement.setAttribute("target","_blank");
 }
 
+document.querySelector(".cta a").computedStyleMap.color="black";
+
+
 
 
 
