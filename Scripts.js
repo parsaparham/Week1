@@ -1,44 +1,17 @@
-//Changr Attributes with Java
+const CTA=document.querySelector(".cta a");
+const ALERT=document.querySelector("#booking-alert");
 
-//const element=document.querySelector("#showCcse").hasAttribute("href");  //=>false
-//const element1=document.querySelector("#showcase").hasAttribute("class");   //true
-//console.log(element1);
+CTA.classList.remove("hide");
+ALERT.classList.add("hide");
 
-//document.querySelector("#showcase").setAttribute("class","test");
-
-//document.querySelector("#test").removeAttribute("class");
-
-const ctaElement=document.querySelector(".cta a");
-
-console.log(ctaElement.attributes);
-
-if(ctaElement.hasAttribute("target"))
+function reveal(e)
 {
-    console.log(ctaElement.getAttribute("target"));// target is a ataribute  in that says if the eleman is click oprn that href in a new tab
-}else
-{
-    ctaElement.setAttribute("target","_blank");
+    e.preventDefault();رفتارهای پیش فرض ذا ازش میگیرد وباعث میشه صفحه از بالا لود نشود هنگام کلیک کردن
+    CTA.classList.toggle("hide");
+    ALERT.classList.toggle("hide");
 }
 
-document.querySelector(".cta a").computedStyleMap.color="black";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+CTA.onclick=reveal();
 
 
